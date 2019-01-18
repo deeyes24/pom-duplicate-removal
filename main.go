@@ -87,7 +87,7 @@ func getUniqueDeps(u []Dependency) string{
   var buffer bytes.Buffer
 
   for i:=0 ; i< len(u) ;i++{
-    buffer.WriteString("\t <dependency> \n \t \t <groupdId>" +u[i].GroupId +"</groupdId> \n" )
+    buffer.WriteString("\t <dependency> \n \t \t <groupId>" +u[i].GroupId +"</groupId> \n" )
     buffer.WriteString("\t \t <artifactId>" +u[i].ArtifactId +"</artifactId> \n" )
     if (len(u[i].Version) > 0) {
       buffer.WriteString("\t \t <version>" +u[i].Version +"</version> \n" )
